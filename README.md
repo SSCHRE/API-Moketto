@@ -8,3 +8,12 @@ A program that allows you to mock any API endpoint for frontend development, bas
 - **Hot reload**
 - **CORS on by default**
 - **Import**: Import files like a Java/Hibernate entity to automatically generate endpoints.
+
+## Screenshots
+<details>
+<summary>Screenshots</summary>
+  
+![screenshot1](https://i.ibb.co/nqgxJ7wM/image.png)
+![screenshot2](https://i.ibb.co/LhnV1D9B/image.png)
+![screenshot3](https://i.ibb.co/39CrbTR8/image.png)
+</details>
