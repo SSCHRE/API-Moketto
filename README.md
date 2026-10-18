@@ -17,3 +17,12 @@ A program that allows you to mock any API endpoint for frontend development, bas
 ![screenshot2](https://i.ibb.co/LhnV1D9B/image.png)
 ![screenshot3](https://i.ibb.co/39CrbTR8/image.png)
 </details>
+
+## Roadmap
+- [x] REST API
+- [x] Import hibernate entity
+- [ ] More import types
+- [ ] SOAP
+- [ ] GraphQL 
+- [ ] macOS build (`.dmg` / `.app`)
+- [ ] Linux build (AppImage / `.deb`)
