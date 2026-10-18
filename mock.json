@@ -1,0 +1,126 @@
+{
+  "settings": {
+    "port": 3000,
+    "cors": true,
+    "delay": 0
+  },
+  "routes": [
+    {
+      "id": "775c4aad193d",
+      "name": "Health check",
+      "method": "GET",
+      "path": "/api/health",
+      "status": 200,
+      "delay": 0,
+      "failRate": 0,
+      "failStatus": 500,
+      "enabled": true,
+      "headers": {},
+      "body": {
+        "status": "ok",
+        "time": "{{now}}"
+      }
+    },
+    {
+      "id": "144575939321",
+      "name": "Login",
+      "method": "POST",
+      "path": "/api/auth/login",
+      "status": 200,
+      "delay": 300,
+      "failRate": 0,
+      "failStatus": 500,
+      "enabled": true,
+      "headers": {},
+      "body": {
+        "token": "{{uuid}}",
+        "user": {
+          "email": "{{body.email || \"guest@example.com\"}}",
+          "name": "{{fullName}}"
+        }
+      }
+    },
+    {
+      "id": "66bf419ba818",
+      "name": "Current user",
+      "method": "GET",
+      "path": "/api/me",
+      "status": 200,
+      "delay": 0,
+      "failRate": 0,
+      "failStatus": 500,
+      "enabled": true,
+      "headers": {
+        "Cache-Control": "no-store"
+      },
+      "body": {
+        "id": 1,
+        "name": "Ada Lovelace",
+        "email": "ada@example.com",
+        "role": "admin"
+      }
+    }
+  ],
+  "resources": [
+    {
+      "id": "b4bd9ec284f6",
+      "name": "books",
+      "path": "/api/books",
+      "idField": "id",
+      "persist": false,
+      "enabled": true,
+      "data": [
+        {
+          "id": 1,
+          "title": "Et laboris commodo",
+          "author": "Radia Allen"
+        },
+        {
+          "id": 2,
+          "title": "Ipsum ut",
+          "author": "Dennis Backus"
+        },
+        {
+          "id": 3,
+          "title": "Veniam consectetur eiusmod",
+          "author": "Frances Ritchie"
+        },
+        {
+          "id": 4,
+          "title": "Ut ut tempor ex sit",
+          "author": "Ken Lovelace"
+        },
+        {
+          "id": 5,
+          "title": "Eiusmod nisi minim",
+          "author": "Dennis Backus"
+        },
+        {
+          "id": 6,
+          "title": "Quis incididunt",
+          "author": "Grace Allen"
+        },
+        {
+          "id": 7,
+          "title": "Nostrud ullamco",
+          "author": "Hedy Rossum"
+        },
+        {
+          "id": 8,
+          "title": "Ut tempor ex",
+          "author": "Tim Turing"
+        },
+        {
+          "id": 9,
+          "title": "Ullamco sed",
+          "author": "Barbara Turing"
+        },
+        {
+          "id": 10,
+          "title": "Labore magna ea enim dolore",
+          "author": "Guido Lamarr"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "name": "apimoketto",
+  "version": "1.0.0",
+  "description": "A program that allows you to mock any API endpoint for frontend development, based on NodeJS.",
+  "type": "module",
+  "bin": {
+    "apimoketto": "bin/apimoketto.js"
+  },
+  "scripts": {
+    "start": "node bin/apimoketto.js",
+    "build": "node scripts/build.js"
+  },
+  "files": [
+    "bin",
+    "src"
+  ],
+  "engines": {
+    "node": ">=18.3"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "esbuild": "^0.28.2",
+    "postject": "^1.0.0-alpha.6"
+  }
+}
