@@ -7,7 +7,7 @@ A program that allows you to mock any API endpoint for frontend development, bas
 - **Admin UI** at `/admin`: create and edit everything, send test requests, and watch a live request log
 - **Hot reload**
 - **CORS on by default**
-- **Import**: Import files like a Java/Hibernate entity to automatically generate endpoints.
+- **Import**: Import files code a Java/Hibernate entity to automatically generate endpoints.
 
 ## Screenshots
 <details>
